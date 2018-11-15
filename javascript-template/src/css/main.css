@@ -1,0 +1,200 @@
+html{
+  background-color: black;
+  font-family: 'Hind';
+}
+
+#clic-info{
+  background-color: #D2B1E3;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1.2em;
+  padding: 16px;
+}
+
+#modal{
+  display: none;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+}
+
+.modal-content{
+  background-color: #44B7C8;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1.5em;
+  font-family: 'Allerta Stencil';
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  box-shadow: 
+  0 1px 2px rgba(0,0,0, 0.6), 
+  2px 1px 4px rgba(0,0,0, 0.3), 
+  0 0 7px 2px #f07ac5, 
+  inset 0 1px 2px rgba(0,0,0, 0.6), 
+  inset 2px 1px 4px rgba(0,0,0, 0.3), 
+  inset 0 0 7px 2px #f07ac5;
+  animation: content-neon 5s infinite;
+}
+
+.close{
+  background-color: black;
+  cursor: pointer;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px rgba(211, 7, 167, 0.6), 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(3,0,128, 0.3), 
+    inset 0 0 7px 2px rgba(211,7,167, 0.6);
+    animation: close-neon 5s infinite;
+}
+
+.clearfix{
+  overflow: hidden;
+  margin: 20px 0px;
+}
+
+.container-small{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+}
+
+h1{
+  color: #eb5db7;
+  text-align: center;
+  animation: neon-buttons 5s infinite;
+  font-size: 3.5em;
+  font-family: 'Courgette', sans-serif;
+}
+
+.subtitle{
+  color: #eb5db7;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  padding-bottom: 20px; 
+}
+
+button{
+  color: #eb5db7;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px rgba(0,208,255, 0.6), 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(3,0,128, 0.3), 
+    inset 0 0 7px 2px rgba(0,208,255, 0.6);
+    animation: neon-buttons 5s infinite;
+  padding: 1rem 1.25rem;
+  font-family: 'Allerta Stencil';
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #eb5db7,
+  inset 1px 1px 1px white;
+}
+
+@keyframes neon-buttons{
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+    4% {
+      border-color: transparent;
+      opacity: 0.2;
+    }
+    
+    8% {
+      border-color: #1FFFFF;
+      opacity: 1;
+    }
+    
+    28% {
+      border-color: #1FFFFF;
+      opacity: 1;
+    }
+    
+    30% {
+      border-color: transparent;
+      opacity: 0.2;
+    }
+    
+    36% {
+      border-color: #1FFFFF;
+      opacity: 1;
+    }
+    
+    100% {
+      border-color: #1FFFFF;
+      opacity: 1;
+    }
+  }
+  
+.p-containers{
+  color: #eb5db7;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 90%;
+  margin-top: 30px;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+      2px 4px 3px rgba(3,0,128, 0.3), 
+      0 0 7px 2px rgba(0,208,255, 0.6), 
+      inset 0 1px 2px rgba(0,0,0, 0.6), 
+      inset 2px 1px 4px rgba(0,0,0, 0.3), 
+      inset 2px 4px 3px rgba(3,0,128, 0.3), 
+      inset 0 0 7px 2px rgba(0,208,255, 0.6);
+      animation: neon-buttons 5s infinite;
+  text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #eb5db7,
+    inset 1px 1px 1px white;
+}
+
+p{
+  padding-left: 20px;
+  color: #dcc7fd;
+  list-style: none;
+  font-size: 1.1em;
+  animation: pshow 5s;
+}
+
+@keyframes pshow{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 5;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>No T, no Shade!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Courgette|Hind" rel="stylesheet">
+</head>
+
+<body>
+  <!--MODAL QUE CONTIENE INFORMACIÓN IMPORTANTE-->
+  <button id="clic-info">IMPORTANT INFO!</button>
+  <div id="modal">
+    <div class="modal-content">
+      <button class="close">X</button>
+      <h2>Hello, hello, hello! Welcome to RuPaul's Drag Race info list.</h2>
+      <h2>Please, click on "All Queens" to display the list of names of all participants.</h2>
+      <h2>Warning! The list "Winners" and "Miss Congeniality" contains potential spoilers.</h2>
+    </div>
+  </div>
+
+  <!--DIV CONTAINER-->
+  <div id="container" class="container-small">
+    <h1>No Key, No Shade!</h1>
+    <p class="subtitle">Rupaul's Drag Race info list! Okuuur!!</p>
+    <div id="section" class="clearfix">
+
+      <!--QUEENS-->
+      <div class="column">
+        <button id="queens">ALL QUEENS</button>
+        <div id="queens-container" class="p-containers">
+        </div>
+      </div>
+
+      <!--WINNERS-->
+      <div class="column">
+        <button id="winners">WINNERS</button>
+        <div id="winners-container" class="p-containers">
+        </div>
+
+      </div>
+
+      <!--MISS CONGENIALITY-->
+      <div class="column">
+        <button id="congeniality">MISS CONGENIALITY</button>
+        <div id="congeniality-container" class="p-containers">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--END CONTAINER-->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
